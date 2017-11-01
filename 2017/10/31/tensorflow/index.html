@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="tensorflow," />
 
 
 
@@ -79,13 +79,20 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Alicechoo&#39;s Blog">
-<meta property="og:url" content="http://alicechoo.github.io/index.html">
+<meta name="description" content="本文使用Anaconda来安装tensorflow cpu版本，并希望在 Jupyter notebook 中导入 TensorFlow 。在安装tensorflow时，参照的是以前的安装教程，教程中的tensorflow当时还不支持Python3.6，因此在本文中都是按照tensorflow不支持Python3.6来进行。相信现在tensorflow支持Python3.6之后，安装tensorf">
+<meta name="keywords" content="tensorflow">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Windows10 64位使用Anaconda安装tensorflow">
+<meta property="og:url" content="http://alicechoo.github.io/2017/10/31/tensorflow/index.html">
 <meta property="og:site_name" content="Alicechoo&#39;s Blog">
+<meta property="og:description" content="本文使用Anaconda来安装tensorflow cpu版本，并希望在 Jupyter notebook 中导入 TensorFlow 。在安装tensorflow时，参照的是以前的安装教程，教程中的tensorflow当时还不支持Python3.6，因此在本文中都是按照tensorflow不支持Python3.6来进行。相信现在tensorflow支持Python3.6之后，安装tensorf">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://alicechoo.github.io/images/tensorflowImg/helloTensorflow.jpg">
+<meta property="og:updated_time" content="2017-11-01T06:33:22.553Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Alicechoo&#39;s Blog">
+<meta name="twitter:title" content="Windows10 64位使用Anaconda安装tensorflow">
+<meta name="twitter:description" content="本文使用Anaconda来安装tensorflow cpu版本，并希望在 Jupyter notebook 中导入 TensorFlow 。在安装tensorflow时，参照的是以前的安装教程，教程中的tensorflow当时还不支持Python3.6，因此在本文中都是按照tensorflow不支持Python3.6来进行。相信现在tensorflow支持Python3.6之后，安装tensorf">
+<meta name="twitter:image" content="http://alicechoo.github.io/images/tensorflowImg/helloTensorflow.jpg">
 
 
 
@@ -115,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://alicechoo.github.io/"/>
+  <link rel="canonical" href="http://alicechoo.github.io/2017/10/31/tensorflow/"/>
 
 
 
 
 
-  <title>Alicechoo's Blog</title>
+  <title>Windows10 64位使用Anaconda安装tensorflow | Alicechoo's Blog</title>
   
 
 
@@ -140,8 +147,7 @@
     
   
 
-  <div class="container sidebar-position-right 
-  page-home">
+  <div class="container sidebar-position-right page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -224,9 +230,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -256,9 +262,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/10/31/tensorflow/" itemprop="url">Windows10 64位使用Anaconda安装tensorflow</a></h1>
+          <h1 class="post-title" itemprop="name headline">Windows10 64位使用Anaconda安装tensorflow</h1>
         
 
         <div class="post-meta">
@@ -308,9 +312,7 @@
       
 
       
-        
-          
-            <p>本文使用Anaconda来安装tensorflow cpu版本，并希望在 Jupyter notebook 中导入 TensorFlow 。在安装tensorflow时，参照的是以前的安装教程，教程中的tensorflow当时还不支持Python3.6，因此在本文中都是按照tensorflow不支持Python3.6来进行。相信现在tensorflow支持Python3.6之后，安装tensorflow cpu版本会更加简便。</p>
+        <p>本文使用Anaconda来安装tensorflow cpu版本，并希望在 Jupyter notebook 中导入 TensorFlow 。在安装tensorflow时，参照的是以前的安装教程，教程中的tensorflow当时还不支持Python3.6，因此在本文中都是按照tensorflow不支持Python3.6来进行。相信现在tensorflow支持Python3.6之后，安装tensorflow cpu版本会更加简便。</p>
 <h2 id="安装Anaconda"><a href="#安装Anaconda" class="headerlink" title="安装Anaconda"></a>安装Anaconda</h2><p>在<a href="https://www.anaconda.com/download/" target="_blank" rel="external">Anaconda官网</a>上选择windows Python3.6 64位下载，并安装。安装完成后，配置环境变量。</p>
 <h3 id="win10配置环境变量"><a href="#win10配置环境变量" class="headerlink" title="win10配置环境变量"></a>win10配置环境变量</h3><p>windows10配置环境变量可以点击”设置”-&gt;”系统”-&gt;”关于”-&gt;右侧栏相关设置中的”系统信息”-&gt;左侧栏”高级系统设置”-&gt;”环境变量”来配置相应的环境变量。为用户变量中的Path添加相应Anaconda目录下的Scripts即可。例如我的Anaconda安装在D:\software目录下，此时将Path添加一条D:\Software\Anaconda\Scripts即可。</p>
 <h2 id="在conda环境下安装tensorflow"><a href="#在conda环境下安装tensorflow" class="headerlink" title="在conda环境下安装tensorflow"></a>在conda环境下安装tensorflow</h2><h3 id="创建名为tensorflow的conda环境。打开命令提示符cmd，运行以下命令："><a href="#创建名为tensorflow的conda环境。打开命令提示符cmd，运行以下命令：" class="headerlink" title="创建名为tensorflow的conda环境。打开命令提示符cmd，运行以下命令："></a>创建名为tensorflow的conda环境。打开命令提示符cmd，运行以下命令：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">conda create -n tensorflow python=3.5</div></pre></td></tr></table></figure>
@@ -324,8 +326,6 @@
 <p>最后运行以下命令即可完成安装，并且就可在Jupyter notebook中导入tensorflow<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ipython kernel install --user</div></pre></td></tr></table></figure></p>
 <p>现在在命令提示符中输入jupyter notebook打开jupyter notebook。此时默认浏览器会打开一个localhost页面，点击右侧的new按钮并选择Python选项。键入tensorflow代码,就可以开始tensorflow之旅啦。<br><img src="/images/tensorflowImg/helloTensorflow.jpg"></p>
 
-          
-        
       
     </div>
     
@@ -340,14 +340,20 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/tensorflow/" rel="tag"># tensorflow</a>
+          
+        </div>
+      
+
+      
+      
+      
 
       
 
       
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -357,10 +363,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -368,6 +375,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -388,8 +399,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -446,6 +466,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装Anaconda"><span class="nav-number">1.</span> <span class="nav-text">安装Anaconda</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#win10配置环境变量"><span class="nav-number">1.1.</span> <span class="nav-text">win10配置环境变量</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#在conda环境下安装tensorflow"><span class="nav-number">2.</span> <span class="nav-text">在conda环境下安装tensorflow</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#创建名为tensorflow的conda环境。打开命令提示符cmd，运行以下命令："><span class="nav-number">2.1.</span> <span class="nav-text">创建名为tensorflow的conda环境。打开命令提示符cmd，运行以下命令：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#激活conda环境"><span class="nav-number">2.2.</span> <span class="nav-text">激活conda环境</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Anaconda降级"><span class="nav-number">2.3.</span> <span class="nav-text">Anaconda降级</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#降级完成后，在conda环境下使用pip安装tensorflow"><span class="nav-number">2.4.</span> <span class="nav-text">降级完成后，在conda环境下使用pip安装tensorflow</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -586,6 +622,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
+
+
 
   
 
