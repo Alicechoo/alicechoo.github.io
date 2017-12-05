@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="react-native," />
 
 
 
@@ -79,13 +79,23 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Alicechoo&#39;s Blog">
-<meta property="og:url" content="http://alicechoo.github.io/index.html">
+<meta name="description" content="之前磕磕绊绊终于装好了tensorflow，却不料毕设老师说你换个课题吧。于是猝不及防地开始了我的React-Native之路…这篇文章主要是记录自己在运行react-native run-android遇到的一些问题，也是根据自己的回忆七七八八的凑起来的，有些地方也记得不太清楚了。官网上有相应的新手问答，囊括了各式各样的run-android可能遇到的问题。 安装React Native在此之前">
+<meta name="keywords" content="react-native">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Windows10 React-Native环境搭建及run-android所遇到的问题">
+<meta property="og:url" content="http://alicechoo.github.io/2017/12/04/react-native-build/index.html">
 <meta property="og:site_name" content="Alicechoo&#39;s Blog">
+<meta property="og:description" content="之前磕磕绊绊终于装好了tensorflow，却不料毕设老师说你换个课题吧。于是猝不及防地开始了我的React-Native之路…这篇文章主要是记录自己在运行react-native run-android遇到的一些问题，也是根据自己的回忆七七八八的凑起来的，有些地方也记得不太清楚了。官网上有相应的新手问答，囊括了各式各样的run-android可能遇到的问题。 安装React Native在此之前">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://alicechoo.github.io/images/react-native-buildImg/red.png">
+<meta property="og:image" content="http://alicechoo.github.io/images/react-native-buildImg/changePort.jpg">
+<meta property="og:image" content="http://alicechoo.github.io/images/react-native-buildImg/Error-Android.png">
+<meta property="og:image" content="http://alicechoo.github.io/images/react-native-buildImg/welcomeRN.png">
+<meta property="og:updated_time" content="2017-12-05T07:01:07.388Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Alicechoo&#39;s Blog">
+<meta name="twitter:title" content="Windows10 React-Native环境搭建及run-android所遇到的问题">
+<meta name="twitter:description" content="之前磕磕绊绊终于装好了tensorflow，却不料毕设老师说你换个课题吧。于是猝不及防地开始了我的React-Native之路…这篇文章主要是记录自己在运行react-native run-android遇到的一些问题，也是根据自己的回忆七七八八的凑起来的，有些地方也记得不太清楚了。官网上有相应的新手问答，囊括了各式各样的run-android可能遇到的问题。 安装React Native在此之前">
+<meta name="twitter:image" content="http://alicechoo.github.io/images/react-native-buildImg/red.png">
 
 
 
@@ -115,13 +125,13 @@
 
 
 
-  <link rel="canonical" href="http://alicechoo.github.io/"/>
+  <link rel="canonical" href="http://alicechoo.github.io/2017/12/04/react-native-build/"/>
 
 
 
 
 
-  <title>Alicechoo's Blog</title>
+  <title>Windows10 React-Native环境搭建及run-android所遇到的问题 | Alicechoo's Blog</title>
   
 
 
@@ -140,8 +150,7 @@
     
   
 
-  <div class="container sidebar-position-right 
-  page-home">
+  <div class="container sidebar-position-right page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -234,9 +243,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -266,9 +275,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/12/04/react-native-build/" itemprop="url">Windows10 React-Native环境搭建及run-android所遇到的问题</a></h1>
+          <h1 class="post-title" itemprop="name headline">Windows10 React-Native环境搭建及run-android所遇到的问题</h1>
         
 
         <div class="post-meta">
@@ -340,9 +347,7 @@
       
 
       
-        
-          
-            <p>之前磕磕绊绊终于装好了tensorflow，却不料毕设老师说你换个课题吧。于是猝不及防地开始了我的React-Native之路…<br>这篇文章主要是记录自己在运行react-native run-android遇到的一些问题，也是根据自己的回忆七七八八的凑起来的，有些地方也记得不太清楚了。官网上有相应的<a href="http://bbs.reactnative.cn/topic/130/%E6%96%B0%E6%89%8B%E6%8F%90%E9%97%AE%E5%89%8D%E5%85%88%E6%9D%A5%E8%BF%99%E9%87%8C%E7%9C%8B%E7%9C%8B-react-native%E7%9A%84%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98" target="_blank" rel="external"><font color="#00AAEA">新手问答</font></a>，囊括了各式各样的run-android可能遇到的问题。</p>
+        <p>之前磕磕绊绊终于装好了tensorflow，却不料毕设老师说你换个课题吧。于是猝不及防地开始了我的React-Native之路…<br>这篇文章主要是记录自己在运行react-native run-android遇到的一些问题，也是根据自己的回忆七七八八的凑起来的，有些地方也记得不太清楚了。官网上有相应的<a href="http://bbs.reactnative.cn/topic/130/%E6%96%B0%E6%89%8B%E6%8F%90%E9%97%AE%E5%89%8D%E5%85%88%E6%9D%A5%E8%BF%99%E9%87%8C%E7%9C%8B%E7%9C%8B-react-native%E7%9A%84%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98" target="_blank" rel="external"><font color="#00AAEA">新手问答</font></a>，囊括了各式各样的run-android可能遇到的问题。</p>
 <h3 id="安装React-Native"><a href="#安装React-Native" class="headerlink" title="安装React Native"></a>安装React Native</h3><p>在此之前，我没有装过相关的Android Studio以及JDK，所以全程按照<a href="http://reactnative.cn/docs/0.50/getting-started.html#content" target="_blank" rel="external"><font color="#00AAEA">官方文档</font></a>一步一步操作，并没有遇到什么问题。中间Android Studio装的时间比较长（主要是Android SDK），不过我是放电脑下载就去睡觉了，第二天早上就装好了。所以搭建环境倒是很顺，直到运行了react-native run-android。</p>
 <h3 id="react-native-run-android所遇到的一些问题"><a href="#react-native-run-android所遇到的一些问题" class="headerlink" title="react-native run-android所遇到的一些问题"></a>react-native run-android所遇到的一些问题</h3><p>首先，刚装好环境的时候，居然奇迹般地一次性运行react-native run-android就看到了真机上的Welcome to React Native界面！真是开心到飞起。但是第二天再次运行react-native run-android的时候报错了，错误信息如下：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">Could not resolve all files <span class="keyword">for</span> configuration <span class="string">':classpath'</span>.</div><div class="line">Could not find com.android.tools.build:gradle:3.0.1.</div></pre></td></tr></table></figure></p>
 <p>此时添加google()到相应项目文件夹下的android/build.gradle文件（Stack Overflow上的<a href="https://stackoverflow.com/questions/47446681/react-native-run-android-could-not-find-com-android-tools-buildgradle3-0-1" target="_blank" rel="external"><font color="#00AAEA">相关问题1</font></a>，<a href="https://stackoverflow.com/questions/38702032/android-studio-gradle-refresh-failed-could-not-find-com-android-tools-buildg" target="_blank" rel="external"><font color="#00AAEA">相关问题2</font></a>）<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">buildscript &#123;</div><div class="line">    repositories &#123;</div><div class="line">        mavenLocal()</div><div class="line">        google()</div><div class="line">        jcenter()</div><div class="line">    &#125;</div><div class="line">    dependencies &#123;</div><div class="line">        classpath <span class="string">'com.android.tools.build:gradle:3.0.1'</span></div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
@@ -358,8 +363,6 @@
 <p>不需要更多配置，你就可以使用Reload JS和其它的开发选项了。<br>对于我自己的手机来说并没有跟我预想的一样出现Welcome to React Native界面，出现的只有白屏。等了一小会儿后，仍然是白屏。百度后发现是因为小米手机要开启悬浮窗权限，于是在手机桌面-&gt;安全中心-&gt;授权管理-&gt;应用权限管理-&gt;权限管理-&gt;显示悬浮窗-&gt;AwesomeProject设置允许显示悬浮窗，再点开AwesomeProject，此时出现了满眼的红屏。<br><img src="/images/react-native-buildImg/red.png" width="300" height="200"><br>按照红屏上的说明，摇一摇手机然后选择弹出框中的Dev Setting，然后点击Debug server host &amp; port for device，设置与自己电脑相同的ip并且端口号设置为8081，ip可以在命令行运行ipconfig查看，如我的设置为：192.168.253.1:8081。<br><img src="/images/react-native-buildImg/changePort.jpg" width="300" height="200"><br>然后返回去摇晃手机，点击Reload。但是我的的界面还是红屏，不过此时的信息是不一样的<br><img src="/images/react-native-buildImg/Error-Android.png" width="300" height="200"><br>我想是不是我的ip地址设置错误了，所以我直接用电脑开了WiFi手机连上，然后根据Stack Overflow上<a href="https://stackoverflow.com/questions/38870710/error-could-not-get-batchedbridge-make-sure-your-bundle-is-packaged-properly" target="_blank" rel="external"><font color="#00AAEA">类似问题解决方法</font></a>，运行react-native start，在另一个窗口运行react-native run-android，居然奇迹般地看到了Welcome to React Native界面。<br><img src="/images/react-native-buildImg/welcomeRN.png" width="300" height="200"><br>在尝试过程中，我记得因为某个问题尝试性的在android/app/src/main文件夹中添加了assets/index.android.bundle文件，最后还运行成功了，相关问题在<a href="http://blog.csdn.net/a2824256/article/details/53557196" target="_blank" rel="external"><font color="#00AAEA">这里</font></a>。在命令行中运行react-native run-android时，记得要以管理员身份运行，以及连接的设备加上开启的模拟器最多只能有一个，可以用adb devices查看连接的设备或者开启的模拟器。如果遇到相应的端口号被占用，可以输入命令<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">react-native start --port=8088</div></pre></td></tr></table></figure></p>
 <p>来更换端口号。</p>
 
-          
-        
       
     </div>
     
@@ -374,168 +377,36 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://alicechoo.github.io/2017/10/31/tensorflow/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Alicechoo">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar_libai.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Alicechoo's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/10/31/tensorflow/" itemprop="url">Windows10 64位使用Anaconda安装tensorflow</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-31T09:57:55+08:00">
-                2017-10-31
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/安装tensorflow/" itemprop="url" rel="index">
-                    <span itemprop="name">安装tensorflow</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
+            <a href="/tags/react-native/" rel="tag"># react-native</a>
           
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>本文使用Anaconda来安装tensorflow cpu版本，并希望在 Jupyter notebook 中导入 TensorFlow 。在安装tensorflow时，参照的是以前的安装教程，教程中的tensorflow当时还不支持Python3.6，因此在本文中都是按照tensorflow不支持Python3.6来进行。相信现在tensorflow支持Python3.6之后，安装tensorflow cpu版本会更加简便。</p>
-<h2 id="安装Anaconda"><a href="#安装Anaconda" class="headerlink" title="安装Anaconda"></a>安装Anaconda</h2><p>在<a href="https://www.anaconda.com/download/" target="_blank" rel="external">Anaconda官网</a>上选择windows Python3.6 64位下载，并安装。安装完成后，配置环境变量。</p>
-<h3 id="win10配置环境变量"><a href="#win10配置环境变量" class="headerlink" title="win10配置环境变量"></a>win10配置环境变量</h3><p>windows10配置环境变量可以点击”设置”-&gt;”系统”-&gt;”关于”-&gt;右侧栏相关设置中的”系统信息”-&gt;左侧栏”高级系统设置”-&gt;”环境变量”来配置相应的环境变量。为用户变量中的Path添加相应Anaconda目录下的Scripts即可。例如我的Anaconda安装在D:\software目录下，此时将Path添加一条D:\Software\Anaconda\Scripts即可。</p>
-<h2 id="在conda环境下安装tensorflow"><a href="#在conda环境下安装tensorflow" class="headerlink" title="在conda环境下安装tensorflow"></a>在conda环境下安装tensorflow</h2><h3 id="创建名为tensorflow的conda环境。打开命令提示符cmd，运行以下命令："><a href="#创建名为tensorflow的conda环境。打开命令提示符cmd，运行以下命令：" class="headerlink" title="创建名为tensorflow的conda环境。打开命令提示符cmd，运行以下命令："></a>创建名为tensorflow的conda环境。打开命令提示符cmd，运行以下命令：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">conda create -n tensorflow python=3.5</div></pre></td></tr></table></figure>
-<h3 id="激活conda环境"><a href="#激活conda环境" class="headerlink" title="激活conda环境"></a>激活conda环境</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">activate tensorflow</div></pre></td></tr></table></figure>
-<p>运行这条命令后会变为「(tensorflow) C:\Users\用户名&gt;」，此时确保tensorflow的环境变量已被成功添加，若还没有添加tensorflow环境变量，添加即可。<br>因为此时Anaconda默认支持python3.6，Anaconda中的Python，IPython，pip，Spyder，Jupyter notebook等都是Python3.6版本，此时若使用pip安装tensorflow会产生错误，因此我们要将Anaconda降级为Python3.5版本。</p>
-<h3 id="Anaconda降级"><a href="#Anaconda降级" class="headerlink" title="Anaconda降级"></a>Anaconda降级</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">conda install python=3.5</div></pre></td></tr></table></figure>
-<p>然后就是漫长的降级过程，因为在降级过程中，许多的包都需要降级。（降级最好在conda环境下进行，我试过不在conda环境下运行，结果并不尽人意，使用pip安装tensorflow时会报错，几经折腾终于装好tensorflow后，Anaconda中的Python却是3.6版本，仍然提示无法找到tensorflow模块，并且Jupyter notebook也报错显示无法找到tensorflow模块）</p>
-<h3 id="降级完成后，在conda环境下使用pip安装tensorflow"><a href="#降级完成后，在conda环境下使用pip安装tensorflow" class="headerlink" title="降级完成后，在conda环境下使用pip安装tensorflow"></a>降级完成后，在conda环境下使用pip安装tensorflow</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">pip install --ignore-installed --upgrade https://storage.googleapis.com/tensorflow/windows/cpu/tensorflow-1.3.0-cp35-cp35m-win_amd64.whl</div></pre></td></tr></table></figure>
-<p>成功安装TensorFlow后，尝试在cmd中键入Python，若显示Python为3.5版本，尝试键入<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">import tensorflow as tf</div></pre></td></tr></table></figure></p>
-<p>当python版本为3.5的版本时，一般import tensorflow就不会报错。若显示python为3.6版本，可以选择重新降级。此外，因为我们希望在Jupyter notebook中导入TensorFlow，因此还需要在TensorFlow环境中安装Jupyter跟Ipython<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">conda install ipython</div><div class="line">conda install jupyter</div></pre></td></tr></table></figure></p>
-<p>最后运行以下命令即可完成安装，并且就可在Jupyter notebook中导入tensorflow<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ipython kernel install --user</div></pre></td></tr></table></figure></p>
-<p>现在在命令提示符中输入jupyter notebook打开jupyter notebook。此时默认浏览器会打开一个localhost页面，点击右侧的new按钮并选择Python选项。键入tensorflow代码,就可以开始tensorflow之旅啦。<br><img src="/images/tensorflowImg/helloTensorflow.jpg"></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
       
 
       
       
-        <div class="post-eof"></div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/10/31/tensorflow/" rel="next" title="Windows10 64位使用Anaconda安装tensorflow">
+                <i class="fa fa-chevron-left"></i> Windows10 64位使用Anaconda安装tensorflow
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
       
     </footer>
   </div>
@@ -545,10 +416,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -556,6 +428,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -576,8 +452,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -643,6 +528,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装React-Native"><span class="nav-number">1.</span> <span class="nav-text">安装React Native</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#react-native-run-android所遇到的一些问题"><span class="nav-number">2.</span> <span class="nav-text">react-native run-android所遇到的一些问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#在小米真机上运行遇到的一些问题"><span class="nav-number">3.</span> <span class="nav-text">在小米真机上运行遇到的一些问题</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -783,6 +684,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
+
+
 
   
 
